@@ -1,3 +1,18 @@
+package cn.itcast.bookstore.book.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.MapHandler;
+
+import cn.itcast.bookstore.book.domain.Book;
+import cn.itcast.bookstore.category.domain.Category;
+import cn.itcast.commons.CommonUtils;
+import cn.itcast.jdbc.TxQueryRunner;
+
 public class BookDao {
 	private QueryRunner qr=new TxQueryRunner();
 
